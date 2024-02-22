@@ -1,0 +1,88 @@
+.file-input {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .file-label {
+    margin-right: 10px; /* Marge entre le label et l'input */
+    margin-bottom: 20px;
+  }
+  
+  .file-upload {
+    /* Styles supplémentaires pour l'apparence du bouton */
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .file-upload:hover {
+    background-color: #2980b9;
+  }
+
+  .bloc{
+    margin-top: 60px;
+    text-align: center;
+
+  }
+  .file-label{
+    width: 300px;
+  }
+
+
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+
+  .example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .example-margin {
+    margin: 0 10px;
+  }
+  
+  p{
+    text-align: center; 
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: x-large;
+   }

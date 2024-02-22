@@ -1,0 +1,37 @@
+/* Couleurs personnalisées */
+.custom-menu {
+  background-color: #f0f2f5; /* Couleur de fond */
+  border-radius: 4px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.custom-menu-item {
+  color: #333; /* Couleur du texte */
+  padding: 8px 16px; /* Espacement intérieur */
+}
+
+.custom-menu-item:hover {
+  background-color: #d9e9f9; /* Couleur de fond au survol */
+}
+
+.custom-button {
+  background-color: #3f51b5; /* Couleur de fond des boutons */
+  color: white; /* Couleur du texte des boutons */
+  border: none; /* Supprimer le cadre */
+  flex:1;
+  height: 100%;
+  width: 250px;
+}
+
+.custom-button:hover {
+  background-color: #667eea; /* Couleur de fond des boutons au survol */
+}
+
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

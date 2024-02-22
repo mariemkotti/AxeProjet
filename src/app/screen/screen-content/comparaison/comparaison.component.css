@@ -1,0 +1,142 @@
+.file-input {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .file-label {
+    margin-right: 10px; /* Marge entre le label et l'input */
+    margin-bottom: 20px;
+  }
+  
+  .file-upload {
+    /* Styles supplémentaires pour l'apparence du bouton */
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .file-upload:hover {
+    background-color: #2980b9;
+  }
+
+  .bloc{
+    margin-top: 60px;
+    text-align: center;
+
+  }
+  .file-label{
+    width: 300px;
+  }
+
+
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+
+  .example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .example-margin {
+    margin: 0 10px;
+  }
+  
+  p{
+    margin-top: 15px;
+    text-align: center; 
+    font-weight: bold;
+    font-size: x-large;
+   }
+
+   .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+  }
+
+  .grid-item {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item{
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* .grid-item:hover {
+    color: blue;
+  }
+  .hovered {
+    color: blue;
+    cursor: pointer;
+  } */
+
+.col{
+  grid-template-columns: 40% 40%;
+
+}
+
+.nomfichier{
+  font-size: 15px;
+}
+ li{
+  font-size: 12px;
+ }
+
+ .source-file-not-in-target {
+  color: blue; 
+}
+
+.source-file-in-target {
+  color: green; 
+}
+
+.not-in-source {
+  color:red;
+}

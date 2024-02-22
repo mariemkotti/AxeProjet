@@ -1,0 +1,50 @@
+<div class="grid-container">
+  <div class="">
+    <label for="sourceFile" class="file-label">Choisir un fichier source :</label>
+    <input type="file" id="sourceFile" class="file-upload" (change)="onFileSelected($event, 'source')" accept=".xml, .json" webkitdirectory directory multiple >
+  </div>
+  <div class="">
+    <label for="targetFile" class="file-label">Choisir un fichier target :</label>
+    <input type="file" id="targetFile" class="file-upload" (change)="onFileSelected($event, 'target')" accept=".xml, .json" webkitdirectory directory multiple >
+  </div>
+</div>
+
+<div>
+  <div class="item">
+    <p>Fichiers source:</p>
+    <ul>
+      <li *ngFor="let file of sourceFiles" (click)="onFileNameClick(file, 'source')" [ngClass]="{'source-file-not-in-target': !isFileInTarget(file.name), 'source-file-in-target': isFileInTarget(file.name)}">{{ file.name }}</li>
+      <li *ngFor="let file of filterTargetFiles()" class="not-in-source" (click)="onFileNameClick(file, 'target')">{{ file.name }}</li>
+    </ul>
+  </div>
+</div>
+
+<p>Résultat:</p>
+<div class="grid-container" *ngIf="sourceFileContent && targetFileContent">
+ 
+  <div class="grid-item">
+    <p class="nomfichier">{{ sourceFileName }}</p>
+    <pre>{{ sourceFileContent }}</pre>
+  </div>
+
+  <div class="grid-item">
+    <p class="nomfichier">{{ targetFileName }}</p>
+    <pre>{{ targetFileContent }}</pre>
+  </div>
+</div>
+
+<!-- <button (click)="comparerFichiers()">Comparer les fichiers</button>
+ -->
+
+<!-- <div *ngIf="comparisonResult !== null">
+  <p>Résultat de la comparaison : {{ comparisonResult ? 'Identique' : 'Différent' }}</p>
+</div> -->
+
+<div *ngIf="comparisonResult !== null">
+  <p>Résultat de la comparaison : {{ comparisonResult }}</p>
+</div>
+
+<ngx-text-diff
+  [text1]="sourceFileContent"
+  [text2]="targetFileContent"
+  [config]="{ showTextDiff: true, insertedColor: 'green', removedColor: 'red' }"></ngx-text-diff>

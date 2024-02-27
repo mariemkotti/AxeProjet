@@ -5,7 +5,7 @@ import { ScreenContentComponent } from './screen/screen-content/comparaison/comp
 // import { XmlComponent } from './screen/screen-content/comparaison/xml.service-content';
 
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: 'Fusion', component: FusionComponent },
   { path: 'Comparaison', component: ScreenContentComponent },
   //  { path: 'Home', component:XmlComponent}
